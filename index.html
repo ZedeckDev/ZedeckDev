@@ -229,7 +229,7 @@ responsivas e focadas nas necessidades de cada cliente.
 
               const title = document.createElement('h3');
               const link = document.createElement('a');
-              link.href = publishedProjects[repo.name] || repo.homepage || (repo.has_pages ? `https://${githubUsername.toLowerCase()}.github.io/${repo.name}/` : repo.html_url);
+              link.href = publishedProjects[repo.name.toLowerCase()] || repo.homepage || (repo.has_pages ? `https://${githubUsername.toLowerCase()}.github.io/${repo.name}/` : repo.html_url);
               link.target = '_blank';
               link.rel = 'noopener noreferrer';
               link.textContent = repo.name;
