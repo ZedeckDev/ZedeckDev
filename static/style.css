@@ -129,15 +129,22 @@ a {
   display: inline-block;
   margin: 0 0 16px;
   color: var(--primary);
-  font-size: 0.72rem;
+  
+  /* 1. MUDAR O TAMANHO (Escolha o valor que preferir, ex: 1.5rem, 2rem ou em px) */
+  font-size: 1.8rem;     
+
+  /* 2. MUDAR A FONTE (Escolha uma das que importou: 'Montserrat', 'Oswald' ou 'Questrial') */
+  font-family: 'Montserrat', sans-serif; 
+  
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.05em; /* Reduzi um pouco o espaçamento das letras já que a fonte ficou maior */
   text-transform: uppercase;
 }
 
+
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
   line-height: 1;
   letter-spacing: -0.04em;
   font-weight: 800;
